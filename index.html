@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="main.js" defer></script>
+    <title>Sign-up-Form</title>
+  </head>
+  <body>
+    <div class="section-one">
+      <div class="logo">
+        <img src="images/esports.png" alt="logo" />
+        <h1>Hashira</h1>
+      </div>
+      <div class="attribution">
+        <p>
+            Photo by
+            <a href="https://unsplash.com/@axville?utm_content=
+            creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">
+            Axville</a> 
+            on<a href="https://unsplash.com/photos/person-using-desktop-SXGVliZGS7I?
+            utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">
+            Unsplash
+            </a>
+        </p>
+        <p>
+            <a href="https://www.flaticon.com/free-icons/esports" title="esports icons" target="_blank">
+                Esports icons created by Hilmy Abiyyu A. - Flaticon
+            </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="section-two">
+        <div class="instructions">
+            <p>This is not a real online service! You Can join our community
+                to help you realize your deepest gaming skills.<br>
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>The community is waiting for you.</p>
+        </div>
+        <div class="form-div">
+            <h3>Join Now!</h3>
+            <form action="#" method="get" id="form-info">
+                <div class="input-section">
+                    <div class="form-info">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" name="first_name" placeholder="Enter first name" pattern="[a-zA-Z]+" required>
+                    </div>
+                    <div class="form-info">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" name="last_name" placeholder="Enter last name" pattern="[a-zA-Z]+" required>
+                    </div>
+                    <div class="form-info">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="user_email" placeholder="example@email.com" pattern="(\w|.)+@\w+\.[a-z]{2,}" required>
+                    </div>
+                    <div class="form-info">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="user_phone" placeholder="e.g (+999) 9999" pattern="^\+?(\d+)" required>
+                    </div>
+                    <div class="form-info" id="pwdDiv">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="user_password" placeholder="Password" required>
+                    </div>
+                    <div class="form-info">
+                        <label for="pwd_confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="pwd_confirm" name="password_confirmation" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
